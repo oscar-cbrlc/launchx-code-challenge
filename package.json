@@ -9,6 +9,7 @@
   "author": "oscar-cbrlc",
   "license": "ISC",
   "devDependencies": {
+    "eslint": "^8.14.0",
     "jest": "^28.0.3"
   }
 }
