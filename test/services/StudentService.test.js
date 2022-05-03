@@ -12,7 +12,7 @@ describe('Tests for getStudentsByCertification', () => {
 describe('Tests for getStudentsByCredits', () => {
     test('should return fds', () => {
         const students = [{credits: 0},{credits: 50},{credits: 100}]
-        const studentsFiltered = StudentService.getStudentsByCreditsAbove(students, ">50")
+        const studentsFiltered = StudentService.getStudentsByCredits(students, ">50")
         expect(studentsFiltered).toEqual([{credits: 100}])
     });
     test('should throw an exception if invalid expression', () => {
