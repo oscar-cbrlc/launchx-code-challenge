@@ -1,7 +1,7 @@
 const StudentService = require("./../../lib/services/StudentService")
 const Reader = require("./../../lib/utils/Reader")
 
-describe('Tests for getStudentsByCertification', () => {
+describe('Tests for filterByCertification', () => {
     test('should get students by certification', () => {
         const students = [{id: "123a", haveCertification: true},{id: "456b", haveCertification:false},{id: "789c", haveCertification:true}]
         const studentsFiltered = StudentService.filterByCertification(students, true);
@@ -9,7 +9,7 @@ describe('Tests for getStudentsByCertification', () => {
     });
 });
 
-describe('Tests for getStudentsByCredits', () => {
+describe('Tests for filterByCertification', () => {
     test('should return fds', () => {
         const students = [{credits: 0},{credits: 50},{credits: 100}]
         const studentsFiltered = StudentService.filterByCredits(students, ">50")
