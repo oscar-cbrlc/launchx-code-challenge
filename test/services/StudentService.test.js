@@ -18,7 +18,7 @@ describe('Tests for getStudentsByCredits', () => {
     test('should throw an exception if invalid expression', () => {
         const students = [{credits: 0},{credits: 50},{credits: 100}]
         expect(() => {
-            StudentService.getStudentsByCreditsAbove(students, "=100");
+            StudentService.getStudentsByCredits(students, "=100");
         }).toThrow();
     });
 });
