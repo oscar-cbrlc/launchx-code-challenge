@@ -12,13 +12,13 @@ describe('Tests for filterByCertification', () => {
 describe('Tests for filterByCredits', () => {
     test('should return correct objects', () => {
         const students = [{credits: 0},{credits: 50},{credits: 100}]
-        const studentsFiltered = StudentService.filterByCredits(students, ">50", ["==", "<=", ">=", "<", ">"])
+        const studentsFiltered = StudentService.filterByCredits(students, ">50")
         expect(studentsFiltered).toEqual([{credits: 100}])
     });
     test('should throw an exception if invalid expression', () => {
         const students = [{credits: 0},{credits: 50},{credits: 100}]
         expect(() => {
-            StudentService.filterByCredits(students, "=100", ["==", "<=", ">=", "<", ">"]);
+            StudentService.filterByCredits(students, "=100");
         }).toThrow();
     });
 });
