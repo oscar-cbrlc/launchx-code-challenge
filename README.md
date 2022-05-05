@@ -191,7 +191,6 @@ In summary, the tests for the class expect the methods to return correct values,
 For the method ``filterByCredits``, there is also a test that expects the method to throw an error if the expression is not valid. 
 
 ```Javascript
-### [StudentService.test.js](https://github.com/oscar-cbrlc/launchx-code-challenge/blob/main/test/services/StudentService.test.js)
 const StudentService = require("./../../lib/services/StudentService")
 
 describe('Tests for filterByCertification', () => {
